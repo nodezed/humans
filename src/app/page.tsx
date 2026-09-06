@@ -1,4 +1,38 @@
+import type { Metadata } from "next";
 import { Users, Heart, Terminal, Sparkles, Shield, Cpu } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Humans & Creators — The Engineers Behind Nodezed",
+  description:
+    "Meet the systems architects, kernel engineers, and developers building zero-egress cloud compute, NVMe clusters, and high-performance bare metal at Nodezed.",
+  alternates: {
+    canonical: "https://nodezed.com/humans",
+  },
+  openGraph: {
+    title: "The Humans Behind Nodezed — Engineering Next-Gen Cloud",
+    description:
+      "Meet the engineers, kernel architects, and builders behind Nodezed's global compute network and zero-egress NVMe storage.",
+    url: "https://nodezed.com/humans",
+    type: "profile",
+    siteName: "Nodezed",
+    images: [
+      {
+        url: "https://nodezed.com/og.png",
+        width: 1200,
+        height: 630,
+        alt: "The Humans Behind Nodezed",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Humans Behind Nodezed",
+    description:
+      "Meet the team engineering global cloud compute, bare-metal servers, and zero-egress storage.",
+    images: ["https://nodezed.com/og.png"],
+    creator: "@nodezed",
+  },
+};
 
 interface TeamMember {
   name: string;
