@@ -21,7 +21,7 @@ export function HumansLoading() {
         {[1, 2, 3].map((n) => (
           <div
             key={n}
-            className="p-6 rounded-xl border border-black/[0.06] dark:border-white/[0.08] bg-neutral-50/50 dark:bg-neutral-900/40 space-y-3.5"
+            className="p-6 rounded-xl border border-[#e3e3e3] dark:border-[#464646] bg-[#ffffff] dark:bg-[#000000] space-y-3 shadow-xs"
           >
             <div className="h-9 w-9 rounded-lg bg-neutral-200/80 dark:bg-neutral-800/80" />
             <div className="h-5 w-36 rounded bg-neutral-200/80 dark:bg-neutral-800/80" />
@@ -35,7 +35,7 @@ export function HumansLoading() {
 
       {/* 3. Team Cards Skeleton */}
       <div className="space-y-6">
-        <div className="border-b border-black/[0.06] dark:border-white/[0.08] pb-4 space-y-2">
+        <div className="border-b border-[#e3e3e3] dark:border-[#464646] pb-4 space-y-2">
           <div className="h-6 w-48 rounded-lg bg-neutral-200/80 dark:bg-neutral-800/80" />
           <div className="h-3.5 w-72 max-w-full rounded bg-neutral-200/40 dark:bg-neutral-800/40" />
         </div>
@@ -44,7 +44,7 @@ export function HumansLoading() {
           {[1, 2, 3, 4].map((member) => (
             <div
               key={member}
-              className="p-5 rounded-xl border border-black/[0.06] dark:border-white/[0.08] bg-white dark:bg-[#111114] space-y-4 flex flex-col justify-between"
+              className="p-5 rounded-xl border border-[#e3e3e3] dark:border-[#464646] bg-[#ffffff] dark:bg-[#000000] space-y-4 flex flex-col justify-between shadow-xs"
             >
               <div className="space-y-3">
                 {/* Avatar + Name/Role */}
@@ -64,7 +64,7 @@ export function HumansLoading() {
               </div>
 
               {/* Bottom Tags & Link Icons */}
-              <div className="flex items-center justify-between pt-3 border-t border-black/[0.04] dark:border-white/[0.06]">
+              <div className="flex items-center justify-between pt-3 border-t border-[#e3e3e3] dark:border-[#464646]">
                 <div className="flex gap-1.5">
                   <div className="h-5 w-14 rounded-md bg-neutral-200/50 dark:bg-neutral-800/50" />
                   <div className="h-5 w-16 rounded-md bg-neutral-200/50 dark:bg-neutral-800/50" />
@@ -81,14 +81,14 @@ export function HumansLoading() {
       </div>
 
       {/* 4. Join the Mission Callout Skeleton */}
-      <div className="p-8 sm:p-10 rounded-2xl border border-black/[0.08] dark:border-white/[0.08] bg-neutral-950/90 text-center space-y-4 flex flex-col items-center">
-        <div className="h-6 w-6 rounded-full bg-neutral-800" />
-        <div className="h-6 w-72 max-w-full rounded-lg bg-neutral-800" />
+      <div className="p-8 sm:p-10 rounded-2xl border border-[#e3e3e3] dark:border-[#464646] bg-[#ffffff] dark:bg-[#000000] text-center space-y-4 flex flex-col items-center shadow-xs">
+        <div className="h-6 w-6 rounded-full bg-neutral-200 dark:bg-neutral-800" />
+        <div className="h-6 w-72 max-w-full rounded-lg bg-neutral-200/80 dark:bg-neutral-800/80" />
         <div className="space-y-1.5 w-full max-w-md">
-          <div className="h-3.5 w-full rounded bg-neutral-800/70" />
-          <div className="h-3.5 w-3/4 mx-auto rounded bg-neutral-800/70" />
+          <div className="h-3.5 w-full rounded bg-neutral-200/50 dark:bg-neutral-800/50" />
+          <div className="h-3.5 w-3/4 mx-auto rounded bg-neutral-200/50 dark:bg-neutral-800/50" />
         </div>
-        <div className="h-9 w-40 rounded-lg bg-neutral-800/90 mt-2" />
+        <div className="h-9 w-40 rounded-lg bg-[#050505]/80 dark:bg-[#fafafa]/80 mt-2" />
       </div>
     </div>
   );
