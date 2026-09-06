@@ -10,8 +10,8 @@ The dedicated engineering showcase, creators platform, and philosophy of the bui
 ## Development
 ```bash
 pnpm install
-pnpm dev # runs on http://localhost:3001/humans
+pnpm dev
 ```
 
 ## Production
-Served at [https://nodezed.com/humans](https://nodezed.com/humans).
+Served at [https://humans.nodezed.com](https://humans.nodezed.com) and [https://nodezed.com/humans](https://nodezed.com/humans).
