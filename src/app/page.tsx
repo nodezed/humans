@@ -72,7 +72,7 @@ export default function HumansPage() {
 
       {/* 2. Manifesto Strip */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="p-6 rounded-xl border border-black/[0.06] dark:border-white/[0.08] bg-neutral-50/50 dark:bg-neutral-900/40 space-y-3">
+        <div className="p-6 rounded-xl border border-[#e3e3e3] dark:border-[#464646] bg-[#ffffff] dark:bg-[#000000] space-y-3 shadow-xs">
           <div className="h-9 w-9 rounded-lg bg-neutral-200/70 dark:bg-neutral-800 flex items-center justify-center text-neutral-900 dark:text-white">
             <Cpu className="h-5 w-5" />
           </div>
@@ -82,7 +82,7 @@ export default function HumansPage() {
           </p>
         </div>
 
-        <div className="p-6 rounded-xl border border-black/[0.06] dark:border-white/[0.08] bg-neutral-50/50 dark:bg-neutral-900/40 space-y-3">
+        <div className="p-6 rounded-xl border border-[#e3e3e3] dark:border-[#464646] bg-[#ffffff] dark:bg-[#000000] space-y-3 shadow-xs">
           <div className="h-9 w-9 rounded-lg bg-neutral-200/70 dark:bg-neutral-800 flex items-center justify-center text-neutral-900 dark:text-white">
             <Terminal className="h-5 w-5" />
           </div>
@@ -92,7 +92,7 @@ export default function HumansPage() {
           </p>
         </div>
 
-        <div className="p-6 rounded-xl border border-black/[0.06] dark:border-white/[0.08] bg-neutral-50/50 dark:bg-neutral-900/40 space-y-3">
+        <div className="p-6 rounded-xl border border-[#e3e3e3] dark:border-[#464646] bg-[#ffffff] dark:bg-[#000000] space-y-3 shadow-xs">
           <div className="h-9 w-9 rounded-lg bg-neutral-200/70 dark:bg-neutral-800 flex items-center justify-center text-neutral-900 dark:text-white">
             <Shield className="h-5 w-5" />
           </div>
@@ -105,7 +105,7 @@ export default function HumansPage() {
 
       {/* 3. Team Cards */}
       <div className="space-y-6">
-        <div className="border-b border-black/[0.06] dark:border-white/[0.08] pb-4">
+        <div className="border-b border-[#e3e3e3] dark:border-[#464646] pb-4">
           <h2 className="text-xl font-bold text-neutral-900 dark:text-white">The Engineering Team</h2>
           <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1">
             The individuals writing kernel code, operating the points of presence, and answering your late-night tickets.
@@ -116,7 +116,7 @@ export default function HumansPage() {
           {TEAM_MEMBERS.map((member) => (
             <div
               key={member.name}
-              className="p-5 rounded-xl border border-black/[0.06] dark:border-white/[0.08] bg-white dark:bg-[#111114] hover:border-black/[0.14] dark:hover:border-white/[0.16] transition-all flex flex-col justify-between space-y-4"
+              className="p-5 rounded-xl border border-[#e3e3e3] dark:border-[#464646] bg-[#ffffff] dark:bg-[#000000] hover:border-black/[0.14] dark:hover:border-white/[0.16] transition-all flex flex-col justify-between space-y-4 shadow-xs"
             >
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
@@ -134,7 +134,7 @@ export default function HumansPage() {
                 </p>
               </div>
 
-              <div className="flex items-center justify-between pt-2 border-t border-black/[0.04] dark:border-white/[0.06]">
+              <div className="flex items-center justify-between pt-2 border-t border-[#e3e3e3] dark:border-[#464646]">
                 <div className="flex flex-wrap gap-1.5">
                   {member.tags.map((tag) => (
                     <span
@@ -183,17 +183,17 @@ export default function HumansPage() {
       </div>
 
       {/* 4. Join the Mission Callout */}
-      <div className="p-8 sm:p-10 rounded-2xl border border-black/[0.08] dark:border-white/[0.08] bg-neutral-950 text-white text-center space-y-4">
-        <Sparkles className="h-6 w-6 mx-auto text-amber-400" />
+      <div className="p-8 sm:p-10 rounded-2xl border border-[#e3e3e3] dark:border-[#464646] bg-[#ffffff] dark:bg-[#000000] text-[#050505] dark:text-[#fafafa] text-center space-y-4 shadow-xs">
+        <Sparkles className="h-6 w-6 mx-auto text-amber-500" />
         <h2 className="text-xl sm:text-2xl font-bold tracking-tight">Want to build cloud hardware and software with us?</h2>
-        <p className="text-xs sm:text-sm text-neutral-400 max-w-lg mx-auto leading-relaxed">
+        <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 max-w-lg mx-auto leading-relaxed">
           We are always searching for gifted systems developers, network architects, and kernel hackers.
           No corporate bureaucracy, just high-impact engineering.
         </p>
         <div className="pt-2">
           <a
             href="mailto:careers@nodezed.com"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-neutral-950 text-xs font-semibold hover:bg-neutral-100 transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#050505] dark:bg-[#fafafa] text-[#fafafa] dark:text-[#050505] hover:bg-[#202020] dark:hover:bg-[#e6e6e6] text-xs font-semibold transition-colors"
           >
             <span>Write to the Founders</span>
           </a>
