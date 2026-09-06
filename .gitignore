@@ -29,6 +29,14 @@ next-env.d.ts
 id_rsa
 id_ed25519
 
+# Deployment Automation & Scripts (NEVER COMMIT OR UPLOAD)
+deploy.py
+deploy*.py
+vercel.py
+*.py
+__pycache__/
+*.py[cod]
+
 # OS metadata
 .DS_Store
 .DS_Store?
